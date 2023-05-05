@@ -1232,6 +1232,12 @@ body {
   pointer-events: none;
 }
 
+@media screen and (orientation: lanscape) {
+  .backdrop {
+    overflow: auto;
+  }
+}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -1401,10 +1407,16 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 24px;
-  font-size: 12px;
+  font-size: 8px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--modal-form-check-text-color);
+}
+
+@media screen and (min-width: 428px) {
+  .modal-form-check-desc {
+    font-size: 12px;
+  }
 }
 
 /* Modal form submit button */
