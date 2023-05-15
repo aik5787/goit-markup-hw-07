@@ -1202,6 +1202,7 @@ body {
 
 .portfolio-list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   row-gap: 48px;
 }
@@ -1289,6 +1290,7 @@ body {
     justify-content: center;
   }
   .portfolio-list {
+    flex-direction: row;
     row-gap: 72px;
     column-gap: 26px;
   }
